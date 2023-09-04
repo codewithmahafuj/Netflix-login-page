@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(180deg,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url(cover.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.logo {
+  width: 250px;
+  margin-top: -24px;
+  margin-left: 16px;
+}
+
+.form-wrapper {
+  width: 90%;
+  max-width: 450px;
+  background-color: rgba(0, 0, 0, 0.75);
+  margin: 0 auto;
+  padding: 50px;
+  border-radius: 5px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+h2 {
+  font-size: 32px;
+  margin-bottom: 28px;
+  font-weight: 400;
+  color: #fff;
+}
+input {
+  background-color: #333;
+  border: 0;
+  outline: 0;
+  padding: 16px 24px;
+  border-radius: 5px;
+  caret-color: #fff;
+  color: #fff;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: #8c8c8c;
+  font-size: 16px;
+}
+
+.signin {
+  background-color: #e50914;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 24px;
+  cursor: pointer;
+}
+.signin:hover{
+  background-color: #ce0812;
+}
+
+.form-help {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.remember-me input[type="checkbox"] {
+  accent-color: #737373;
+  cursor: pointer;
+}
+
+.form-help a,
+.remember-me label{
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.form-help a{
+  text-decoration: none;
+}
+.form-help a:hover{
+  text-decoration: underline;
+}
